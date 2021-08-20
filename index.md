@@ -99,6 +99,8 @@ This course is primarily intended for researchers who need to automate data anal
 Ed-DaSH is a **Da**ta **S**cience training programme for **H**ealth and Biosciences. The [team](https://edcarp.github.io/Ed-DaSH/ed_dash_team.html) has developed workshops using [The Carpentries](https://carpentries.org/) platform on the following topics. See [workshops](https://edcarp.github.io/Ed-DaSH/workshops.html) for dates and registration details. All workshops will be delivered remotely.
 
 <h2 id="general">General Information</h2>
+
+{% comment %}
 AUDIENCE
 
 Explain who your audience is.  (In particular, tell readers if the
