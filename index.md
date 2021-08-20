@@ -3,14 +3,14 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "Zoom"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "Online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+venue: "University of Edinburgh"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+address: "online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "gb"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the
 latitude: "55.96"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-3.23"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "Oct 11-14, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+humandate: "11-14 October, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "09:00 - 17:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2021-10-11      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2021-10-14        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Sam Haynes", "Tim Booth"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
@@ -77,7 +77,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endif %}
 
 
-<h2 id="general">General Information</h2>
+<h2 id="general">Overview</h2>
 
 {% comment %}
 INTRODUCTION
@@ -85,15 +85,20 @@ INTRODUCTION
 Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/intro.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/intro.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% endif %}
 
-{% comment %}
+**Workflows with Snakemake**
+
+Researchers needing to implement data analysis workflows face a number of common challenges, including the need to organise tasks, make effective use of compute resources, handle any errors in processing, and document and share their methods. The Snakemake workflow system provides effective solutions to these problems. By the end of the course, you will be confident in using Snakemake to run real workflows in your day-to-day research.
+
+Snakemake workflows are described by special scripts that define steps in the workflow as rules, and these are then used by Snakemake to construct and execute a sequence of shell commands to yield the desired output. Re-calculation of existing results is avoided where possible, so you can add or update input data, then efficiently generate an updated result. Workflows can be seamlessly scaled to server, cluster, grid and cloud environments without the need to modify the workflow definition.
+
+This course is primarily intended for researchers who need to automate data analysis tasks for biological research involving next-generation sequence data, for example RNA-seq analysis, variant calling, CHIP-Seq, bacterial genome assembly, etc. However, Snakemake has many uses beyond this and the course does not assume any specialist biological knowledge. The language used to write Snakemake workflows is Python-based, but no prior knowledge of Python is required or assumed either. We do require that attendees must have familiarity with using the Linux command line (pipes, redirects, variables, ...).
+  
+**Ed-DaSH**
+
+Ed-DaSH is a **Da**ta **S**cience training programme for **H**ealth and Biosciences. The [team](https://edcarp.github.io/Ed-DaSH/ed_dash_team.html) has developed workshops using [The Carpentries](https://carpentries.org/) platform on the following topics. See [workshops](https://edcarp.github.io/Ed-DaSH/workshops.html) for dates and registration details. All workshops will be delivered remotely.
+
+<h2 id="general">General Information</h2>
 AUDIENCE
 
 Explain who your audience is.  (In particular, tell readers if the
