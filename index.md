@@ -13,8 +13,8 @@ humandate: "11-14 October 2021"    # human-readable dates for the workshop (e.g.
 humantime: "09:00 - 17:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2021-10-11      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2021-10-14        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Sam Haynes", "Tim Booth"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Frances"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Sam Haynes", "Tim Booth", "Frances Turner"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: []     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["first@example.org","second@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -92,7 +92,7 @@ Researchers needing to implement data analysis workflows face a number of common
 
 Snakemake workflows are described by special scripts that define steps in the workflow as rules, and these are then used by Snakemake to construct and execute a sequence of shell commands to yield the desired output. Re-calculation of existing results is avoided where possible, so you can add or update input data, then efficiently generate an updated result. Workflows can be seamlessly scaled to server, cluster, grid and cloud environments without the need to modify the workflow definition.
 
-This course is primarily intended for researchers who need to automate data analysis tasks for biological research involving next-generation sequence data, for example RNA-seq analysis, variant calling, CHIP-Seq, bacterial genome assembly, etc. However, Snakemake has many uses beyond this and the course does not assume any specialist biological knowledge. The language used to write Snakemake workflows is Python-based, but no prior knowledge of Python is required or assumed either. We do require that attendees must have familiarity with using the Linux command line (pipes, redirects, variables, ...).
+This course is primarily intended for researchers who need to automate data analysis tasks for biological research involving next-generation sequence data, for example RNA-seq analysis, variant calling, CHIP-Seq, bacterial genome assembly, etc. However, Snakemake has many uses beyond this and the course does not assume any specialist biological knowledge. The language used to write Snakemake workflows is Python-based, but no prior knowledge of Python is required or assumed either. We do require that attendees must have familiarity with using the Linux command line (pipes, redirects, variables, ...), but these topics will recapped as part of the course.
   
 **Ed-DaSH**
 
